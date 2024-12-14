@@ -1,0 +1,168 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.profile-heading {
+  font-size: 2.4rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.profile-card-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.profile-card-box:hover {
+  transform: translateY(-5px);
+}
+
+.profile-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-label {
+  font-weight: 700;
+  color: #555;
+  font-size: 1.1rem;
+  width: 35%;
+}
+
+.profile-value {
+  font-size: 1.1rem;
+  color: #666;
+  width: 60%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-input-field {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: calc(100% - 40px);
+  transition: border 0.3s;
+}
+
+.profile-input-field:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.profile-phone-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-name-inputs {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.profile-trash-button {
+  background-color: #dc3545;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-trash-button:hover {
+  background-color: #c82333;
+}
+
+.trash-icon {
+  color: white;
+}
+
+.profile-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.profile-edit-btn,
+.profile-save-btn,
+.profile-cancel-btn {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.profile-save-btn:hover,
+.profile-edit-btn:hover {
+  background-color: #357ab8;
+}
+
+.profile-cancel-btn {
+  background-color: #6c757d;
+}
+
+.profile-cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .profile-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-label {
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  .profile-value {
+    width: auto;
+  }
+
+  .profile-phone-input-container,
+  .profile-name-inputs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .profile-input-field {
+    width: 100%;
+  }
+}

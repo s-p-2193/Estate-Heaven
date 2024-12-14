@@ -1,0 +1,51 @@
+
+/* Main Page Styling - Keep the background clean (white) */
+.list-property-page {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: white; /* No background color for the page */
+  scroll-behavior: smooth;
+}
+
+/* Form Container */
+.form-container {
+  width: 100%;
+  max-width: 750px; /* Restrict form width */
+  background-color: #fff; /* White background for form */
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Page Title Styling */
+.page-title {
+  color: #4a90e2; /* Primary color */
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.page-description {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px 15px;
+    max-width: 100%;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .page-description {
+    font-size: 14px;
+  }
+}

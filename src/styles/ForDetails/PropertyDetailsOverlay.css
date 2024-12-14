@@ -1,0 +1,215 @@
+.property-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.property-overlay-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+}
+
+.property-overlay-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.property-overlay-image-section {
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.property-overlay-slider-image-container {
+  cursor: pointer;
+}
+
+.property-overlay-slider-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.property-overlay-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.property-overlay-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.property-overlay-price {
+  font-size: 1.4rem;
+  color: #27ae60;
+  margin: 10px 0;
+}
+
+.property-overlay-description {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.property-overlay-location h4,
+.property-overlay-utilities h4,
+.property-overlay-owner-info h4 {
+  color: #34495e;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.property-overlay-location p,
+.property-overlay-utilities p,
+.property-overlay-owner-info p {
+  margin: 3px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.property-overlay-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+/* New CSS for single image display */
+.property-overlay-single-image-container {
+  text-align: center; /* Center the single image */
+}
+
+.property-overlay-single-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Ensure it doesn't overflow */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.property-overlay-slider-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.property-overlay-large-image {
+  width: auto;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+}
+
+.slick-arrow {
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: none; /* Remove shadow */
+}
+
+.slick-arrow:hover {
+  box-shadow: none; /* Ensure no shadow on hover */
+}
+
+.slick-prev {
+  left: 10px; 
+  z-index: 1; 
+}
+
+.slick-next {
+  right: 20px;
+  z-index: 1; 
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .property-overlay-content {
+    padding: 15px;
+  }
+
+  .property-overlay-slider-image {
+    height: 150px;
+  }
+
+  .property-overlay-title {
+    font-size: 1.3rem;
+  }
+
+  .property-overlay-price {
+    font-size: 1.1rem;
+  }
+
+  .property-overlay-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .property-overlay-content {
+    padding: 10px;
+  }
+
+  .property-overlay-close-btn {
+    top: 10px;
+    right: 10px;
+  }
+
+  .property-overlay-slider-image {
+    height: 120px;
+  }
+
+  .property-overlay-title {
+    font-size: 1.2rem;
+  }
+
+  .property-overlay-price {
+    font-size: 1rem;
+  }
+
+  .property-overlay-description {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,183 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* General Styles */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.about-hero {
+  background-color: #f7f7f7;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* Our Mission */
+.our-mission {
+  background-color: #fff;
+  padding: 80px 20px;
+}
+
+.our-mission h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.mission-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 100px; /* Increased gap for better spacing */
+}
+
+.mission-content-wrapper p {
+  flex: 1;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-align: justify; /* Better readability with justified text */
+  margin: 0; /* Remove default margin */
+}
+
+.image-responsive {
+  width: 300px; /* Increased image size */
+  height: auto;
+  object-fit: contain; /* Adjust the image to fit without cropping */
+  border-radius: 10px;
+}
+
+/* Team Section */
+.our-team {
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.our-team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 220px; /* Added max-width for each team member block */
+}
+
+.team-member img {
+  width: 200px; /* Set a standard width */
+  height: 200px; /* Set a standard height */
+  border-radius: 50%; /* Perfectly round shape */
+  object-fit: cover; /* Ensures that images are properly fitted without distortion */
+}
+
+.team-member h3 {
+  font-size: 1.25rem;
+  margin-top: 15px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* Core Values */
+.core-values {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.core-values h2 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.values-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.value-item {
+  text-align: center;
+  max-width: 300px;
+}
+
+.value-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.value-item h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+.about-hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .mission-content-wrapper {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-responsive {
+    width: 250px; /* Adjust image size for smaller screens */
+    margin-top: 20px; /* Add space between image and text */
+  }
+
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .team-member img {
+    width: 120px; /* Reduced size for smaller screens */
+    height: 120px;
+  }
+  
+  .values-list{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .value-item img{
+    width: 120px; /* Reduced size for smaller screens */
+    height: 120px;
+  }
+}

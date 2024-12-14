@@ -1,0 +1,106 @@
+.delete-overlay-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.delete-overlay-content {
+    background: #ffffff;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.delete-overlay-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.delete-overlay-select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.delete-overlay-select:focus {
+    border-bottom: 2px solid #ff4d4d; /* Highlighted focus */
+}
+
+.delete-overlay-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.delete-overlay-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    flex: 1; /* Make buttons the same size */
+}
+
+.delete-overlay-button.cancel {
+    background-color: #f0f0f0; /* Light gray for cancel */
+    color: #333;
+}
+
+.delete-overlay-button.cancel:hover {
+    background-color: #e0e0e0; /* Slightly darker gray */
+}
+
+.delete-overlay-button.proceed {
+    background-color: #007bff; /* Blue for proceed */
+    color: white;
+}
+
+.delete-overlay-button.proceed:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+.delete-overlay-button.confirm {
+    background-color: #ff4d4d; /* Red for delete */
+    color: white;
+}
+
+.delete-overlay-button.confirm:hover {
+    background-color: #e63939; /* Darker red */
+}
+
+.delete-overlay-rating {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem; /* Space between stars */
+    margin-bottom: 1rem;
+}
+
+.delete-star {
+    background: none;
+    border: none;
+    font-size: 2rem; /* Size of stars */
+    color: #ccc; /* Default star color */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.delete-active-star {
+    color: #ffd700; /* Active star color */
+}

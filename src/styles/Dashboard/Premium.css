@@ -1,0 +1,142 @@
+/* General Styling */
+.premium-container {
+    max-width: 870px;
+    margin: auto;
+    padding: 30px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    border-radius: 16px;
+  }
+  
+  .premium-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .premium-header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2d2f33;
+    letter-spacing: 0.5px;
+  }
+  
+  .premium-header p {
+    font-size: 1rem;
+    color: #757575;
+    margin-top: 8px;
+  }
+  
+  /* Premium Plans Section */
+  .premium-plans {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+  }
+  
+  .premium-card {
+    background: linear-gradient(135deg, #ffffff, #f5f5f7);
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid #454545;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 90%;
+    max-width: 380px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .premium-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  .plan-header h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .premium-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #4a90e2;
+    margin: 10px 0 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .premium-card:hover .premium-price {
+    color: #1d4ed8;
+  }
+  
+  .benefits-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  .benefits-list li {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .benefits-list li:before {
+    content: "✔️";
+    font-size: 0.9rem;
+    margin-right: 8px;
+    color: #4a90e2;
+    transition: color 0.3s ease;
+  }
+  
+  .premium-card:hover .benefits-list li:before {
+    color: #1d4ed8;
+  }
+  
+  /* Subscription Buttons */
+  .subscribe-button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #4a90e2, #1d4ed8);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .subscribe-button:hover {
+    background: linear-gradient(135deg, #1d4ed8, #4a90e2);
+    transform: translateY(-2px);
+  }
+  
+  /* Plan Type Variants */
+  .monthly {
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  }
+  
+  .yearly {
+    background: linear-gradient(135deg, #ffecb3, #ffffff);
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .premium-plans {
+      flex-direction: row;
+      gap: 90px;
+    }
+  
+    .premium-card {
+      max-width: 48%;
+    }
+  }
+  

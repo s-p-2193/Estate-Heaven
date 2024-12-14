@@ -1,0 +1,140 @@
+/* General Styling */
+.settings-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #2d2f33;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.settings-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.settings-button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.logout-button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+}
+
+.logout-button:hover {
+  background-color: #1d4ed8;
+}
+
+.delete-button {
+  background-color: #f56565;
+  color: #fff;
+  border: none;
+}
+
+.delete-button:hover {
+  background-color: #e53e3e;
+}
+
+/* Modal Styling */
+.delete-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-modal-content {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.delete-modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.delete-modal-content p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.otp-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  outline: none;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.otp-input:focus {
+  border-color: #4a90e2;
+}
+
+.error-text {
+  color: #e53e3e;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.confirm-button {
+  background-color: #e24a4a;
+  color: #fff;
+  border: none;
+}
+
+.confirm-button:hover {
+  background-color: #d81d1d;
+}
+
+.cancel-button {
+  background-color: #e2e8f0;
+  color: #333;
+  border: none;
+}
+
+.cancel-button:hover {
+  background-color: #cbd5e0;
+}

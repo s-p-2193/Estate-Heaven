@@ -1,0 +1,208 @@
+/* Viewport scaling to make the page properly responsive on mobile */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}
+
+.myproperty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.myproperty-h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.myproperty-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.myproperty-image {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.myproperty-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.myproperty-details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.myproperty-section-title {
+  font-size: 1.4em;
+  margin: 15px 0 10px;
+}
+
+.myproperty-details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.myproperty-details-section label {
+  color: #333;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.myproperty-details-section input,
+.myproperty-details-section select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.myproperty-details input[disabled] {
+  color: #777;
+  background-color: #f4f4f4;
+}
+
+.myproperty-map-section {
+  width: 100%;
+  height: 300px;
+  margin-top: 15px;
+}
+
+.myproperty-actions {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow buttons to wrap if needed */
+}
+
+.myproperty-delete-button,
+.myproperty-edit-button,
+.myproperty-save-button,
+.myproperty-cancel-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.myproperty-delete-button {
+  background-color: #e74c3c;
+}
+
+.myproperty-delete-button:hover {
+  background-color: #c0392b;
+}
+
+.myproperty-edit-button {
+  background-color: #3498db;
+}
+
+.myproperty-edit-button:hover {
+  background-color: #2980b9;
+}
+
+.myproperty-save-button {
+  background-color: #28a745;
+}
+
+.myproperty-cancel-button {
+  background-color: #6c757d;
+}
+
+.myproperty-cancel-button:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .myproperty-card {
+    margin: 10px;
+  }
+
+  .myproperty-details {
+    padding: 10px;
+  }
+
+  .myproperty-details-section {
+    flex-direction: column;
+  }
+
+  .myproperty-map-section {
+    height: 200px;
+  }
+
+  .myproperty-actions {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .myproperty-delete-button,
+  .myproperty-edit-button,
+  .myproperty-save-button,
+  .myproperty-cancel-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .myproperty-h2 {
+    font-size: 1.5em;
+  }
+
+  .myproperty-delete-button,
+  .myproperty-edit-button,
+  .myproperty-save-button,
+  .myproperty-cancel-button {
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+}
+
+.myproperty-loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.no-myproperties {
+  font-size: 1.5em;
+  color: #999;
+}

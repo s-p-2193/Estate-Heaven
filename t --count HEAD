@@ -1,0 +1,46 @@
+[33m7e3c66e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m update searchsection
+[33m226c830[m update dashboard sidebar
+[33me702822[m fix entire dahsboard issue
+[33m2f62cb1[m add geolocation api
+[33mcbb5027[m add profile dashboard
+[33mcfd4c0a[m change dashboard url
+[33m520603d[m add redirect
+[33m95db589[m update coars
+[33m629511b[m update search route
+[33m1f1d1d2[m added cloudnariy
+[33mc249e75[m updted node module-2
+[33mfb43b1e[m updted node module
+[33m4e9de1a[m update authController
+[33m2a6e43c[m update server code
+[33m4fec909[m update link in login and signup
+[33m6ff3e37[m added map
+[33m9fac0d5[m update details view
+[33m4d5bd52[m add detail view
+[33m30d36d6[m dashboard skelaton
+[33m1e0e621[m make changes in dashboard
+[33mdadfe2b[m add google login signup
+[33m2d9b328[m remove env file
+[33m8f471c9[m fix property card and ad search funtionality properly
+[33mbf52124[m Fix image upload
+[33m835cfbd[m fix some issues
+[33m563eacf[m add user dashboard
+[33m0a8e94b[m add resend otp functionality
+[33maecf222[m Complete the Listing form
+[33m4b72bac[m Add List Property Form
+[33ma92577e[m Lots of changes
+[33mea12a93[m Refine the page
+[33m7c1017b[m search property page
+[33m42faa6e[m Transfer Databse to MongoDB Atlas
+[33m8fa6ae2[m remove env credentials
+[33m7637491[m Complete About Us
+[33m180b839[m module change
+[33m03ce42f[m completed forgot password functionality
+[33m0c3af77[m fix navbar issue
+[33m0a91610[m Sucessfull login and signup
+[33mbfdbffa[m add signup and login functionality
+[33m65dcf1d[m restructure the homepage
+[33m68c7190[m propertey update
+[33m9854581[m add property section
+[33m2f1f9a4[m update signup password validation
+[33m46b51e2[m New Typescript
+[33m8e435b7[m Initialize project using Create React App
